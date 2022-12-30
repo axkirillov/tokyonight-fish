@@ -1,5 +1,6 @@
 # TokyoNight Color Palette
 set -l foreground c0caf5
+set -l background 24283b
 set -l selection 364a82
 set -l comment 565f89
 set -l red f7768e
@@ -32,5 +33,8 @@ set -U fish_pager_color_prefix $cyan
 set -U fish_pager_color_completion $foreground
 set -U fish_pager_color_description $comment
 set -U fish_pager_color_selected_background --background=$selection
+
+# Background
+_tokyonight_set_background $foreground $background
 
 set -Ux TOKYONIGHT storm
